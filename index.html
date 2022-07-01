@@ -13,6 +13,121 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <style>
+    /* Importing Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Gantari:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gantari:wght@600&display=swap");
+/* CSS Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+/* Adding CSS to Logo  */
+.logo {
+  font-family: "Gantari", sans-serif;
+  font-size: 40px;
+}
+.logo a {
+  text-decoration: none;
+}
+/* Adding CSS to navbar  */
+nav {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+/* Adding CSS to navbar contents  */
+nav ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Gantari", sans-serif;
+  letter-spacing: normal;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Gantari", sans-serif;
+  letter-spacing: normal;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* Adding CSS of Home (Active) Tag of Navbar  */
+nav ul li a.active {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Gantari", sans-serif;
+  letter-spacing: normal;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* Adding CSS to Menu Button  */
+.menu-btn {
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+/* Using Media Queries  */
+@media (max-width: 920px) {
+  .menu-btn {
+    font-size: 22px;
+    cursor: pointer;
+    display: block;
+  }
+/* Adding CSS to navbar  */
+ nav ul {
+    text-align: center;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+  }
+/* Adding CSS to Menu Button  */
+#click:checked ~ ul {
+    left: 0%;
+  }
+/* Adding CSS to navbar  */
+ nav ul li {
+    margin-top: 40px;
+  }
+  nav ul li a {
+    font-size: 30px;
+  }
+/* Adding CSS to Navbar Contents  */
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: none;
+    color: cyan;
+  }
+}
+
+  </style>
   <body>
     <nav>
       <!-- Creating a logo -->
